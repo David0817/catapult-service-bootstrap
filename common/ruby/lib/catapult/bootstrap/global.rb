@@ -47,7 +47,7 @@ module Catapult::Bootstrap
       end
     end
 
-    CATAPULT_NETWORK_IDENTIFIER = 'zjdc'
+    CATAPULT_NETWORK_IDENTIFIER = 'mijin'
     MONGO_HOST                  = 'db'
 
     def self.catapult_nework_identifier
