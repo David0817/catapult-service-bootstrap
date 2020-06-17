@@ -31,13 +31,13 @@ module Catapult::Bootstrap
         BIN_DIRECTORY
       end
 
-      BASE_NAMESPACE = 'cat'
+      BASE_NAMESPACE = 'zjdc'
       def self.base_namespace
         BASE_NAMESPACE
       end
 
-      CURRENCY_MOSAIC_NAME   = 'currency'
-      HARVESTING_MOSAIC_NAME = 'harvest'
+      CURRENCY_MOSAIC_NAME   = 'shares'
+      HARVESTING_MOSAIC_NAME = 'harvesting'
       MosaicNameStruct = Struct.new(:currency, :harvesting)
       def self.mosaic_name
         MosaicNameStruct.new(CURRENCY_MOSAIC_NAME, HARVESTING_MOSAIC_NAME)

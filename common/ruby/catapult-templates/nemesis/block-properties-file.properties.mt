@@ -35,9 +35,9 @@ duration = 0
 
 divisibility = 6
 duration = 0
-supply = 8'998'999'998'000'000
+supply = 1'000'000'000'000'000
 isTransferable = true
-isSupplyMutable = false
+isSupplyMutable = true
 isRestrictable = false
 
 [distribution>{{base_namespace}}:{{mosaic_name.currency}}]

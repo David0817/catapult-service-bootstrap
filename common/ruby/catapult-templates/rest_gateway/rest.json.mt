@@ -1,7 +1,7 @@
 {
   "network": {
-    "name": "publicTest",
-    "description": "catapult development network",
+    "name": "mijin",
+    "description": "ZHONGJING SYSTEM CHAIN",
     "propertiesFilePath": "/api-node-config/config-network.properties"
   },
 

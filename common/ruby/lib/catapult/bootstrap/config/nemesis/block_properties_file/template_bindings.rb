@@ -15,9 +15,9 @@ module Catapult::Bootstrap
   class Config::Nemesis
     class BlockPropertiesFile
       module TemplateBindings
-        XEM_TOTAL_SUPPLY   = "8'998'999'998'000'000"
-	XEM_ACCOUNT_SUPPLY = "449'949'999'900'000"
-        XEM_NUM_OF_ACCOUNTS = 20 # this has to equal ratio XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
+        XEM_TOTAL_SUPPLY   = "1'000'000'000'000'000"
+	XEM_ACCOUNT_SUPPLY = "200'000'000'000'000"
+        XEM_NUM_OF_ACCOUNTS = 5 # this has to equal ratio XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
 
         def self.template_bindings(nemesis_keys_info, harvest_vrf_directory)
           key_info_array = nemesis_keys_info.key_info_array
@@ -46,7 +46,7 @@ module Catapult::Bootstrap
           key_info_array[0...NUM_HARVEST_KEYS].map { |key_info| distribution(key_info, HARVEST_ACCOUNT_SUPPLY) }
         end
         
-        NUM_CURRENCY_KEYS       = 20 # this has to equal ratio XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
+        NUM_CURRENCY_KEYS       = 5 # this has to equal ratio XEM_TOTAL_SUPPLY/XEM_ACCOUNT_SUPPLY
         CURRENCY_ACCOUNT_SUPPLY = XEM_ACCOUNT_SUPPLY
         def self.currency_distribution(key_info_array)
           key_info_array[0...NUM_CURRENCY_KEYS].map { |key_info| distribution(key_info, CURRENCY_ACCOUNT_SUPPLY) }
